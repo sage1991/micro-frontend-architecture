@@ -133,3 +133,69 @@
 * 여러 프로젝트를 잘 정의된 관계를 가지도록 개발 해야 하기 때문에 개발 효율성 측면에서 좋은 옵션이 될 수 있습니다.
 * 폴리 레포에 비해 이점이 많지만, 단점을 주의하여 사용해야 합니다.
 
+## Monorepo 구현 방식
+
+### Package Manager & Workspaces
+| npm & yarn | pnpm                                  |
+|------------|---------------------------------------|
+| ![workspaces](./workspaces.png) | ![workspaces-pnpm](./workspaces-pnpm.png) |
+
+npm, yarn, pnpm 과 같은 Package Manager에서 root project 내부에 workspaces 기능을 이용하여 여러 하위 패키지를 생성하고 연결 할 수 있습니다.  
+`package.json` 혹은 `pnpm-workspace.yaml` 에서 workspaces 를 설정하여 여러 프로젝트 간의 의존 관계를 정의 합니다.
+
+### Monorepo tool 의 필요성
+
+* 개발 과정에서 여러 패키지들에 의존하게 되고, 특히 빌드 과정이 필요하기 때문에 속도에 대한 문제가 발생 할 수 있습니다.
+* Repository 내 workspace 에 대한 분석와 시각화 기능을 제공 해 주기 때문에 전체적인 프로젝트의 상태와 의존 관계를 파악할 때 효과적입니다.
+* 스케폴딩이나 코드 공유 & 사용 제한 등의 관리 측면에서 편의 기능을 제공합니다.
+* Monorepo tool 에 대한 비교 및 이점에 대한 참고 문헌: https://monorepo.tools/
+
+#### Monorepo tool 의 기능 및 이점
+
+##### Local computation caching
+
+![로컬 캐싱](./images/local-computation-caching.png)
+
+##### Distributed computation caching
+
+![분산 캐싱](./images/distributed-computation-caching.png)
+
+##### Local task orchestration
+
+![로컬 작업 오케스트레이션](./images/local-task-orchestration.png)
+
+##### Distributed task execution
+
+![분산 작업](./images/distributed-task-execution.png)
+
+##### Detecting affected packages
+
+![변경 감지](./images/detecting-affected-packages.png)
+
+##### Workspace analysis
+
+![워크스페이스 분석](./images/workspace-analysis.png)
+
+##### Dependency graph visualization
+
+![의존성 그래프 시각화](./images/dependency-graph-visualization.png)
+
+##### Source code sharing
+
+![코드 공유](./images/source-code-sharing.png)
+
+##### Code generation
+
+![스캐폴딩](./images/code-generation.png)
+
+##### Consistent tooling
+
+![일관된 도구](./images/consistent-tooling.png)
+
+##### Project constraints and visibility
+
+![의존 관계 제한](./images/project-constraints-and-visibility.png)
+
+
+
+
