@@ -2,7 +2,7 @@
 
 ## MFA 를 규정하는 중요한 요소
 
-![ci/cd pipeline](./micro-frontends-ci-pipeline.png)
+![ci/cd pipeline](images/micro-frontends-ci-pipeline.png)
 
 ### Independently Deliverable
 * ~~독립적으로 유저가 사용 할 수 있는 앱~~
@@ -29,7 +29,7 @@
 시스템과 조직이 닮아 가도록 End to End team 을 구성하는 과도기적 단계에서  
 현실적인 문제로 인해 즉각적인 전환이 어려울 경우 때문에 BFF 와 같은 레이어를 활용하여 점진적으로 migration 하는 방식을 고려 할 수 있습니다.
 
-![micro frontends and bff](./micro-frontends-and-bff.png)
+![micro frontends and bff](images/micro-frontends-and-bff.png)
 
 * 각 FE 애플리케이션의 요구사항만을 충족하는 백엔드 서버를 구축하는 BFF 패턴을 사용 할 수 있습니다.
 * BFF 는 자체 비즈니스 로직과 DB를 갖춘 독립적인 서비스 일 수 있고, 하위 서비스에 aggregator 일 수도 있습니다.
@@ -46,7 +46,7 @@
 
 ### 페이지의 구조를 통해 나누는 방법
 
-![페이지 구조를 통해 나누는 방법](./separate-fragments-by-page.png)
+![페이지 구조를 통해 나누는 방법](images/separate-fragments-by-page.png)
 
 * 모든 페이지의 경로를 리스트업 하고 유형을 분류하여 적절한 팀에게 나눠줍니다.
 * 이미 운영되고 있는 서비스가 있을 경우 좀 더 유용할 수 있습니다.
@@ -55,7 +55,7 @@
 
 ### 요구사항을 중심으로 나누는 방법
 
-![요구사항을 중심으로 나누는 방법](./separate-fragments-by-mission.png)
+![요구사항을 중심으로 나누는 방법](images/separate-fragments-by-mission.png)
 
 * 요구사항을 중심으로 팀을 구성하고 페이지와 fragments를 적절한 팀에게 분배 합니다.
 * 결과적인 모습은 페이지 구조를 통해 나누는 방법과 유사 할 수 있습니다.
@@ -72,14 +72,14 @@
 
 ### Monolith Repo
 
-![monolith](./monolith-repo.png)
+![monolith](images/monolith-repo.png)
 
 * 한 저장소에 하나의 앱에 관련된 모든 코드와 리소스를 넣는 방식 입니다.
 * 단일 프로젝트에 페이지, UI 컴포넌트, 상태관리 로직, 데이터 처리 등 모든 기능이 들어 있습니다.
 
 ### Modular Repo
 
-![modular repo](./modular-repo.png)
+![modular repo](images/modular-repo.png)
 
 * 소스코드를 여러개의 모듈로 나누고, 각각을 패키지로 만들어 필요한 다른 곳에서 가져다 쓰는 방식
 
@@ -87,7 +87,7 @@
 
 | Monorepo                    | Polyrepo                    |
 |-----------------------------|-----------------------------|
-| ![monorepo](./monorepo.png) | ![polyrepo](./polyrepo.png) |
+| ![monorepo](images/monorepo.png) | ![polyrepo](images/polyrepo.png) |
 
 * 모듈로 나누어 연관 짓는다는 점은 동일합니다.
 * 모듈들이 하나의 repo에서 관리되면 Monorepo, 모듈들이 별도의 repo 로 관리되면 Polyrepo(=Multirepo) 라고 합니다.
@@ -138,7 +138,7 @@
 ### Package Manager & Workspaces
 | npm & yarn | pnpm                                  |
 |------------|---------------------------------------|
-| ![workspaces](./workspaces.png) | ![workspaces-pnpm](./workspaces-pnpm.png) |
+| ![workspaces](images/workspaces.png) | ![workspaces-pnpm](images/workspaces-pnpm.png) |
 
 npm, yarn, pnpm 과 같은 Package Manager에서 root project 내부에 workspaces 기능을 이용하여 여러 하위 패키지를 생성하고 연결 할 수 있습니다.  
 `package.json` 혹은 `pnpm-workspace.yaml` 에서 workspaces 를 설정하여 여러 프로젝트 간의 의존 관계를 정의 합니다.

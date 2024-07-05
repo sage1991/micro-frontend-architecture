@@ -25,7 +25,7 @@
 
 1. 덜 복잡하고 적은 양의 코드를 관리하기 때문에 코드의 품질이 높아집니다.
 2. 배포의 범위가 줄어들기 때문에 빌드에서 배포 까지의 시간이 단축되고 위험도가 줄어듭니다.  
-![MFA CI 파이프라인](./micro-frontends-ci-pipeline.png)
+![MFA CI 파이프라인](images/micro-frontends-ci-pipeline.png)
 3. 단일 장애지점(Single Point Of Failure)을 피할 수 있습니다.
 4. 점진적으로 업그레이드 하기에 용이합니다. (ex. 차세대 프로젝트)
 5. 요구 사항에 맞춰 애플리케이션을 자유롭게 조립하여 제공 할 수 있습니다.

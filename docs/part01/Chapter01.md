@@ -7,7 +7,7 @@
 **절대적으로 옳은 아키택처는 없음**에 유의 해야 합니다.
 
 ### Monolithic Frontends
-![모놀리스](./monolithic-frontends.png)
+![모놀리스](images/monolithic-frontends.png)
 
 #### 1. The Monolith
 * 팀은 하나의 모놀리스 시스템을 함께 만들게 됩니다.
@@ -24,7 +24,7 @@
   * BFF(Backend For Frontend), GraphQL
 
 ### Micro Frontends
-![마이크로 프론트엔드](./end-to-end-teams-with-micro-frontends.png)
+![마이크로 프론트엔드](images/end-to-end-teams-with-micro-frontends.png)
 
 독립적으로 제공 가능한 FE 애플리케이션이 더 큰 전체로 구성되는 아키텍쳐 스타일 입니다.  
 크고 복잡한 제품을 여러 팀에서 동시에 나누어 개발합니다.
