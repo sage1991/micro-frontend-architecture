@@ -196,6 +196,49 @@ npm, yarn, pnpm 과 같은 Package Manager에서 root project 내부에 workspac
 
 ![의존 관계 제한](./images/project-constraints-and-visibility.png)
 
+## MFA 통합 전략 및 기술 스텍
 
+### Server Side Template Composition
 
+HTML을 전달하는 서버측에서 여러 마이크로 프론트엔드를 조합하는 방식 입니다.  
+nginx 의 Server Side Include(SSI) 와 같은 기능이 대표적입니다.
 
+![Server Side Template Composition](images/server-side-template-composition.png)
+
+### Build Time Integration
+
+![Build Time Integration](images/build-time-integration.png)
+
+### Runtime Integration via iframes
+
+* 장점
+  * iframe 은 모든 브라우저에서 작동 합니다.
+  * 강력한 기술적인 격리 기능을 제공 합니다.(style, script)
+* 단점
+  * 크기 조절이 어려워 반응형 레이아웃을 구성하는데 어려움이 있습니다.
+  * 새로운 컨텍스트가 생성되기 때문에 성능에 오버헤드가 발생 할 수 있습니다.
+  * 접근성 문제 -> SEO에 좋지않은 영향을 줄 수 있습니다.
+  * iframe 내의 컨텐츠 지연으로 사용자 경험이 저하 될 수 있습니다.
+  * 보안에 취약 할 수 있습니다.
+
+![Runtime Integration via iframes](images/runtime-integration-via-iframe.png)
+
+### Runtime integration via Web Components
+
+* 장점
+  * 널리 구현되어 있는 웹 표준 기술입니다.
+  * custom elements 와 shadow dom 모두 기존에는 할 수 없었던 isolation 기능을 제공 합니다.
+  * custom elements 의 생명 주기 메서드들은 여러 다른 application 의 코드들을 일관된 표준화된 방법으로 사용 할 수 있도록 해 줍니다.
+* 단점
+  * Client side 에서 js가 동작해야 하기 때문에 SSR 만으로는 동작 하지 않습니다.
+  * 구형 브라우저에 대한 대응이 필요한 경우 사용하기 힘듭니다.
+
+![Runtime integration via Web Components](images/runtime-integration-via-web-components.png)
+
+### Runtime integration via javascript
+
+* 가장 유연하고 팀에서 자주 채택하는 방식 일 수 있습니다.
+* 각 micro frontend 는 `<script>` 태그를 통해 application 에 포함되며, 로드 시 전역 함수를 진입점으로 노출 합니다.
+* container application 은 runtime 에서 어떤 micro frontend 를 마운트 할 지 결정하고 entry point 를 호출하여 랜더링 시기와 위치를 알려줍니다.
+
+![Runtime integration via module federation](images/runtime-integration-via-module-federation.png)
