@@ -1,0 +1,118 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.3",
+  "deps": {
+    "nx": "^19.5.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "my-utils": [
+        {
+          "file": "packages/my-utils/package.json",
+          "hash": "5189218482240703339",
+          "deps": [
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/my-utils/pnpm-lock.yaml",
+          "hash": "4009445175011777596"
+        },
+        {
+          "file": "packages/my-utils/src/index.ts",
+          "hash": "4880748339901658569"
+        },
+        {
+          "file": "packages/my-utils/tsconfig.json",
+          "hash": "7073398267297239138"
+        }
+      ],
+      "my-app": [
+        {
+          "file": "apps/my-app/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/my-app/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/my-app/README.md",
+          "hash": "12205685531602560652"
+        },
+        {
+          "file": "apps/my-app/next.config.mjs",
+          "hash": "6567081978241091914"
+        },
+        {
+          "file": "apps/my-app/package.json",
+          "hash": "9879590501498408043",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next",
+            "my-utils"
+          ]
+        },
+        {
+          "file": "apps/my-app/pnpm-lock.yaml",
+          "hash": "7601580904619345429"
+        },
+        {
+          "file": "apps/my-app/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/my-app/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/my-app/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/my-app/src/app/globals.css",
+          "hash": "16573379123872968227"
+        },
+        {
+          "file": "apps/my-app/src/app/layout.tsx",
+          "hash": "14869893044596788660"
+        },
+        {
+          "file": "apps/my-app/src/app/page.module.css",
+          "hash": "6975797895798679535"
+        },
+        {
+          "file": "apps/my-app/src/app/page.tsx",
+          "hash": "4262117490005796819"
+        },
+        {
+          "file": "apps/my-app/tsconfig.json",
+          "hash": "4320684160905164141"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "12498160990544161718"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "6742434527657223201"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2320187736902498180"
+      }
+    ]
+  }
+}
