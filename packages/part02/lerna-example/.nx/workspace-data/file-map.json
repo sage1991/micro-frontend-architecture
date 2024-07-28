@@ -1,0 +1,110 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.3",
+  "deps": {
+    "nx": "^19.5.3",
+    "lerna": "^8.1.7"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "7742275034475663751"
+      },
+      {
+        "file": ".idea/.gitignore",
+        "hash": "10286036308014790964"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "10010256335013790573"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "3645336705902427196"
+      },
+      {
+        "file": ".nx/workspace-data/d/server-process.json",
+        "hash": "9042563055504112399"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "18150435248870538347"
+      },
+      {
+        "file": ".idea/misc.xml",
+        "hash": "15411186922940538523"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "414265049992887245"
+      },
+      {
+        "file": ".idea/material_theme_project_new.xml",
+        "hash": "13818254752564903457"
+      },
+      {
+        "file": ".idea/nx-angular-config.xml",
+        "hash": "11747644467998611843"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5363234043767144244"
+      },
+      {
+        "file": "package.json",
+        "hash": "16644379052060223678"
+      },
+      {
+        "file": ".idea/modules.xml",
+        "hash": "10847060851478854757"
+      },
+      {
+        "file": ".idea/lerna-example.iml",
+        "hash": "7210100432694438571"
+      }
+    ],
+    "projectFileMap": {
+      "a": [
+        {
+          "file": "packages/a/README.md",
+          "hash": "17002001921416591732"
+        },
+        {
+          "file": "packages/a/main.js",
+          "hash": "2199357860951991894"
+        },
+        {
+          "file": "packages/a/package.json",
+          "hash": "14889441510855042485",
+          "deps": [
+            "b"
+          ]
+        }
+      ],
+      "b": [
+        {
+          "file": "packages/b/README.md",
+          "hash": "7896783350214521062"
+        },
+        {
+          "file": "packages/b/__tests__/b.test.js",
+          "hash": "274076562486379892"
+        },
+        {
+          "file": "packages/b/lib/b.js",
+          "hash": "5421515829597937113"
+        },
+        {
+          "file": "packages/b/package.json",
+          "hash": "2756006072161209588",
+          "deps": [
+            "npm:axios"
+          ]
+        }
+      ]
+    }
+  }
+}
