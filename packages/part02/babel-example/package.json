@@ -9,14 +9,15 @@
   "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
   "scripts": {
     "browserslist": "pnpx browserslist",
-    "build": "babel src --out-dir dist",
+    "build": "babel src --extensions \".ts\" --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-arrow-functions": "^7.24.7",
-    "@babel/preset-env": "^7.25.3"
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7"
   },
   "dependencies": {
     "core-js": "^3.38.1"
