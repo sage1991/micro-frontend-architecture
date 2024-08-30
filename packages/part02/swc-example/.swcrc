@@ -1,0 +1,16 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "module": {
+    "type": "commonjs"
+  },
+  "env": {
+    "targets": "last 100 Chrome versions"
+  },
+  "minify": true,
+  "jsc": {
+    "minify": {
+      "compress": true,
+      "mangle": true
+    }
+  }
+}
