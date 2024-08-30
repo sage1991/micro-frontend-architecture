@@ -1,1 +1,1 @@
-module.exports = "package-a"
+export default "package-a"

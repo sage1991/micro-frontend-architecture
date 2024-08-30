@@ -1,4 +1,4 @@
-const packageA = require("package-a")
-const packageB = require("package-b")
+import PackageA from "package-a"
+import PackageB from "package-a"
 
-console.log(packageA, packageB)
+console.log(PackageA, PackageB)

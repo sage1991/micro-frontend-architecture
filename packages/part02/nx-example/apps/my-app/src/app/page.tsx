@@ -1,6 +1,7 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import { plus } from "my-utils"
+import Image from "next/image"
+
+import styles from "./page.module.css"
 
 const plus10 = plus(10)
 
@@ -95,5 +96,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  );
+  )
 }

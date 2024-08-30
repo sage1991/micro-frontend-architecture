@@ -1,6 +1,6 @@
-const axios = require("axios")
+import axios from "axios"
 
-module.exports = async () => {
+export default async () => {
   const { data } = await axios.get("https://api.github.com/users")
   return data
 }

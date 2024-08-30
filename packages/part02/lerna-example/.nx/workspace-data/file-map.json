@@ -10,60 +10,28 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "7742275034475663751"
-      },
-      {
-        "file": ".idea/.gitignore",
-        "hash": "10286036308014790964"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "10010256335013790573"
+        "file": "package.json",
+        "hash": "16644379052060223678"
       },
       {
         "file": ".gitignore",
         "hash": "3645336705902427196"
       },
       {
-        "file": ".nx/workspace-data/d/server-process.json",
-        "hash": "9042563055504112399"
+        "file": "nx.json",
+        "hash": "5363234043767144244"
       },
       {
-        "file": ".idea/vcs.xml",
-        "hash": "18150435248870538347"
-      },
-      {
-        "file": ".idea/misc.xml",
-        "hash": "15411186922940538523"
+        "file": "pnpm-lock.yaml",
+        "hash": "7742275034475663751"
       },
       {
         "file": "pnpm-workspace.yaml",
         "hash": "414265049992887245"
       },
       {
-        "file": ".idea/material_theme_project_new.xml",
-        "hash": "13818254752564903457"
-      },
-      {
-        "file": ".idea/nx-angular-config.xml",
-        "hash": "11747644467998611843"
-      },
-      {
-        "file": "nx.json",
-        "hash": "5363234043767144244"
-      },
-      {
-        "file": "package.json",
-        "hash": "16644379052060223678"
-      },
-      {
-        "file": ".idea/modules.xml",
-        "hash": "10847060851478854757"
-      },
-      {
-        "file": ".idea/lerna-example.iml",
-        "hash": "7210100432694438571"
+        "file": "lerna.json",
+        "hash": "10010256335013790573"
       }
     ],
     "projectFileMap": {
@@ -74,11 +42,11 @@
         },
         {
           "file": "packages/a/main.js",
-          "hash": "2199357860951991894"
+          "hash": "11047953997397956001"
         },
         {
           "file": "packages/a/package.json",
-          "hash": "14889441510855042485",
+          "hash": "18216434551178949425",
           "deps": [
             "b"
           ]
@@ -95,11 +63,11 @@
         },
         {
           "file": "packages/b/lib/b.js",
-          "hash": "5421515829597937113"
+          "hash": "2894703722715999526"
         },
         {
           "file": "packages/b/package.json",
-          "hash": "2756006072161209588",
+          "hash": "16707874967298814336",
           "deps": [
             "npm:axios"
           ]
