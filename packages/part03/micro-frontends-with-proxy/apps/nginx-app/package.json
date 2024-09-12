@@ -1,0 +1,14 @@
+{
+  "name": "nginx-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sh ./docker/build.sh",
+    "dev": "sh ./docker/dev.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
