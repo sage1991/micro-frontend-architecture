@@ -27,5 +27,10 @@ export default [
       "simple-import-sort/exports": "error"
     }
   },
-  PluginPrettier
+  PluginPrettier,
+  {
+    rules: {
+      "@typescript-eslint/no-unused-expressions": "off"
+    }
+  }
 ]
