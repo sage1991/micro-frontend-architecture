@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+</head>
+<body>
+<h1>Application root</h1>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+    </ul>
+</nav>
+<div id="root"></div>
+<script type="text/javascript">
+  const WEB_COMPONENTS_LOOKUP = {
+    "/": "mfa-home",
+    "/jobs": "mfa-jobs"
+  }
+  const { pathname } = window.location
+  const name = WEB_COMPONENTS_LOOKUP[pathname]
+  if (name) {
+    document.querySelector("#root").appendChild(document.createElement(name))
+  }
+</script>
+</body>
+</html>
