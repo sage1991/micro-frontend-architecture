@@ -8,6 +8,7 @@ import PluginTypescript from "typescript-eslint"
 export default [
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { languageOptions: { globals: globals.browser } },
+  { languageOptions: { globals: globals.node } },
   PluginJS.configs.recommended,
   ...PluginTypescript.configs.recommended,
   {
